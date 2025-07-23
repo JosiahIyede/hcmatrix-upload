@@ -15,7 +15,7 @@ async function uploadVideo() {
   }
 
   const blobName = encodeURIComponent(file.name);
-  const containerUrl = `https://hrvideos.blob.core.windows.net/vdeos/Videos/${blobName}`;
+  const containerUrl = `https://hrvideos.blob.core.windows.net/hcmatrix/Videos/${blobName}`;
   const sasToken = `sp=racw&st=2025-06-21T11:39:35Z&se=2025-06-27T19:39:35Z&skoid=d8741ab8-9c4d-4c24-9fc1-94a472734efc&sktid=ba130eca-3030-48e1-9089-c979293aeb70&skt=2025-06-21T11:39:35Z&ske=2025-06-27T19:39:35Z&sks=b&skv=2024-11-04&spr=https&sv=2024-11-04&sr=c&sig=QZx4ttSBiWGVXXhzCZ2XE5CFY4oeT4DwydY1vZrCA%2BA%3D`;
   const sasUrl = `${containerUrl}?${sasToken}`;
 
